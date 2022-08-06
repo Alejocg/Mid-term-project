@@ -124,6 +124,38 @@ h4 {
   line-height: 15px;
 }
 
+/* General Components */
+.btn,
+.btn-large {
+  background-color: #072ac8;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+.btn:hover,
+.btn-large:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+.btn {
+  width: 150px;
+  height: 52px;
+}
+.btn-large {
+  width: 100%;
+  height: 80px;
+}
+
 /* Navbar */
 
 #navbar {
@@ -197,22 +229,6 @@ h4 {
 #navbar img {
   width: 3em;
   height: 3em;
-}
-
-#navbar button {
-  background-color: #072ac8;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 36px;
-  gap: 10px;
 }
 
 /* Seccion logos */
