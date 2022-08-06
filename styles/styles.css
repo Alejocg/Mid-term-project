@@ -1,14 +1,257 @@
+/* Colors: 
 
-/*
-Colors:
+#6B708D; grey
+
+#072AC8 blue
+
+#292E47 Header
+
 */
 
 * {
     margin: 0px;
     padding: 0px;
     border: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #1A1A1A;
-    font-size: 20px;
-  }
+    font-family: 'Roboto';
+    color: #6B708D;
+    font-size: 17px;
+}
 
+h2 {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    color: #514D67;
+
+}
+
+h3 {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #292E47;
+
+}
+
+
+/* Navbar */
+
+
+#navbar {
+
+    display: flex;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px 1px #ddd;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    top: 60px;
+    height: 80px;
+    top: 6px;
+    z-index: 1;
+}
+
+
+/*Efectos de Scroll*/
+
+#navbar::before,
+#navbar::after {
+    display: block;
+    height: 16px;
+    position: sticky;
+}
+
+#navbar::before {
+    top: 48px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#navbar::after {
+    background: linear-gradient(white 10%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.4) 70%, transparent);
+    top: 0;
+    z-index: 2;
+}
+
+
+/* Contenido del navbar */
+
+
+#navmenu {
+
+    display: flex;
+    list-style-type: none;
+    flex-basis: 40%;
+    justify-content: space-around;
+
+}
+
+
+#navmenu a:link {
+    text-decoration: none;
+}
+
+#navmenu a:visited {
+    text-decoration: none;
+}
+
+#navmenu a:hover {
+    font-weight: bold;
+    color: #072AC8;
+}
+
+#navmenu a:active {
+    font-weight: bold;
+    color: #072AC8;
+}
+
+
+#navbar img {
+    width: 3em;
+    height: 3em;
+}
+
+#navbar button {
+
+    background-color: #072AC8;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 36px;
+    gap: 10px;
+
+}
+
+/* Seccion logos */
+
+#logos {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
+    filter: grayscale(100%);
+    align-items: center;
+    margin-top: 200px;
+}
+
+/* Seccion recentProjects */
+
+#projects {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 40px;
+}
+
+
+#projects div {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 30px;
+    margin: 10px;
+}
+
+#recentProjects h3 {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    text-align: center;
+}
+
+
+#projects img {
+
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
+
+
+
+#projects a {
+    text-decoration: none;
+}
+
+
+/* Seccion ourServices */
+
+
+#ourServices h3 {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+
+}
+
+
+#services {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 40px;
+
+}
+
+#services img {
+
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+
+}
+
+#services div {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 300px;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 30px;
+    margin: 10px;
+      
+}
+
+#projects a {
+    text-decoration: none;
+}
