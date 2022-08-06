@@ -65,7 +65,8 @@ h4,
 .body-intro,
 .body-intro-light,
 .headline,
-.headline-light .caption,
+.headline-light,
+.caption,
 .caption-light {
   color: #514d67;
 }
