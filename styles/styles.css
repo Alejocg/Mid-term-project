@@ -345,8 +345,8 @@ h5 {
   display: flex;
   flex-direction: row;
   margin: 50px;
-  margin-left: 170px;
   text-align: center;
+  justify-content: flex-start;
 
 }
 
@@ -381,7 +381,7 @@ h5 {
   flex-direction: row;
   text-align: center;
   margin: 50px;
-  margin-left: 170px;
+  justify-content: flex-start;
 }
 
 .services {
