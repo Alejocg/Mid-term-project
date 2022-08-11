@@ -14,6 +14,14 @@
   font-size: 17px;
 }
 
+p {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+}
+
 h2 {
   font-family: "Roboto";
   font-style: normal;
@@ -75,6 +83,19 @@ h5 {
   height: 80px;
 }
 
+.links {
+  font-family: "Roboto";
+  color: #6b708d;
+  font-size: 17px;
+}
+
+.links:hover {
+  font-weight: bold;
+  color: #072ac8;
+}
+
+
+
 /* Navbar */
 
 .top-nav {
@@ -82,16 +103,16 @@ h5 {
   width: 100%;
   position: fixed;
   left: 0;
-  justify-content: space-between;
   box-shadow: 1px 1px 1px 1px #ddd;
   background-color: white;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   top: 60px;
   height: 80px;
   top: 6px;
   z-index: 1;
 }
+
 
 .menu {
   display: flex;
@@ -103,7 +124,13 @@ h5 {
   list-style-type: none;
   flex-basis: 40%;
   justify-content: space-around;
+  
 }
+
+.menu ul {
+  padding-left: 100px;
+}
+
 
 .menu a:link {
   text-decoration: none;
@@ -224,6 +251,8 @@ h5 {
   z-index: 2;
 }
 
+
+
 /* Hamburger responsive */
 
 @media (max-width: 700px) {
@@ -241,6 +270,7 @@ h5 {
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+        
   }
 
   #menu-toggle ~ .menu li {
@@ -266,10 +296,11 @@ h5 {
     width: 100%;
     color: white;
     background-color: rgba(255, 255, 255, 0.699);
+    backdrop-filter: blur(10px);
   }
 
   .menu > li:hover {
-        background-color: rgba(0, 0, 255, 0.116);
+        background-color: rgba(21, 21, 209, 0.096);
   }
 
   .menu > li:not(:last-child) {
@@ -330,21 +361,26 @@ h5 {
 .container {
   display: flex;
   margin: 25px;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 .innerproject {
   display: flex;
   align-items: flex-start;
   padding-right: 0px;
+  padding-bottom: 10px;
+  
+  
 }
 
 .innerproject h5 {
-  padding-left: 25px;
-  padding-top: 10px;
+  padding-left: 30px;
+  padding-top: 22px;
 }
 
 .innerproject p {
-  padding-left: 25px;
+  padding-left: 30px;
 }
 
 .recentProjects h3 {
@@ -371,9 +407,9 @@ h5 {
 .projects a {
   text-decoration: none;
   margin-top: 35px;
-  padding-left: 25px;
   color: #072ac8;
-  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-bottom: 30px;
 }
 
 .projects a:hover {
@@ -400,26 +436,9 @@ h5 {
   margin-left: 3em;
   margin-right: 3em;
   margin-bottom: 40px;
-  color: white;
+  background-color: white;
 }
 
-.services-img {
-  display: flex;
-  flex-direction: column;
-  margin: 50px;
-  text-align: center;
-  height: 40px;
-  width: 40px;
-  box-shadow: none;
-  display: inline-block;
-  padding: 15px;
-  line-height: 100%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  background-color: rgba(13, 167, 238, 0.151);
-  color: white;
-  text-align: center;
-}
 
 .services div {
   display: flex;
@@ -439,6 +458,19 @@ h5 {
   color: white;
 }
 
+.services-img {
+  display: flex;
+  margin: 50px;
+  height: 40px;
+  width: 40px;
+  padding: 15px;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(13, 167, 238, 0.151);
+  margin-left: 30px;
+
+}
+
 .projects a {
   text-decoration: none;
 }
@@ -452,10 +484,35 @@ h5 {
 }
 
 .projects .featuretext {
-  padding: 25px;
+  padding: 30px;
+  padding-top: 12px;
 }
 
 .innerproject {
   color: white;
   background-color: white;
+}
+
+.innerproject-services {
+  display: flex;
+  margin: 25px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+
+}
+
+
+.innerproject-services h5 {
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.innerproject-services p {
+  padding-left: 25px;
+  line-height: 1.6;
+}
+
+.innerproject-services a {
+  padding-left: 30px;
+  padding-bottom: 50px;
 }
