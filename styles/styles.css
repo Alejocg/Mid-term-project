@@ -240,6 +240,7 @@ h5 {
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
   }
 
   #menu-toggle ~ .menu li {
@@ -248,7 +249,7 @@ h5 {
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
+     }
   #menu-toggle:checked ~ .menu li {
     display: flex;
     border: 1px solid #072ac857;
@@ -266,6 +267,11 @@ h5 {
     color: white;
     background-color: rgba(255, 255, 255, 0.699);
   }
+
+  .menu > li:hover {
+        background-color: rgba(0, 0, 255, 0.116);
+  }
+
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
