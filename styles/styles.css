@@ -81,30 +81,19 @@ h1 {
   line-height: 70px;
 }
 h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
   font-size: 50px;
   line-height: 59px;
-  color: #514d67;
 }
 
 h3 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
   font-size: 40px;
   line-height: 47px;
-  color: #292e47;
 }
 
-h5 {
-  font-family: "Roboto";
-  font-style: normal;
+h4 {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  color: #292e47;
 }
 
 /* General Components */
