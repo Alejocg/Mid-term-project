@@ -47,6 +47,11 @@
 }
 
 /* Common styles */
+
+body {
+   background-color: #f2f4fc;
+}
+
 .margin-large {
    margin: 0px 150px;
 }
@@ -599,4 +604,14 @@ h4 {
    width: 100%;
    font-size: 20px;
    margin: 10px 0;
+}
+
+.form-btn {
+   margin-top: 40px;
+}
+
+.form-input input{
+  background: rgba(107, 112, 141, 0.1);
+  width: 100%;
+  padding: 22px 20px;
 }
