@@ -42,40 +42,57 @@
          <h1>Contact Us</h1>
 
          <form class="contact-form" action="/contact.php" method="post">
-            <label for="name">Full name *</label>
-            <input
-               type="text"
-               id="full-name"
-               name="name"
-               placeholder="Enter your full name"
-               required
-            />
+            <div class="form-label">
+               <label for="name">Full name *</label>
+            </div>
 
-            <label for="email">E-mail</label>
-            <input
-               type="text"
-               id="email"
-               name="email"
-               placeholder="Enter your e-mail address"
-            />
+            <div class="form-input">
+               <input
+                  type="text"
+                  id="full-name"
+                  name="name"
+                  placeholder="Enter your full name"
+                  required
+               />
+            </div>
 
-            <label for="phone">Phone</label>
-            <input
-               type="tel"
-               id="phone"
-               name="phone"
-               placeholder="Enter your phone number"
-            />
+            <div class="form-label">
+               <label for="email">E-mail</label>
+            </div>
+            <div class="form-input">
+               <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your e-mail address"
+               />
+            </div>
+            <div class="form-label">
+               <label for="phone">Phone</label>
+            </div>
+            <div class="form-input">
+               <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+               />
+            </div>
 
-            <label for="message">Message</label>
-            <input
-               type="text"
-               id="message"
-               name="message"
-               placeholder="Write your message here ...."
-            />
-
-            <input type="submit" value="Submit" />
+            <div class="form-label">
+               <label for="message">Message</label>
+            </div>
+            <div class="form-input">
+               <input
+                  type="text"
+                  id="message"
+                  name="message"
+                  placeholder="Write your message here ...."
+               />
+            </div>
+            <div class="form-btn">
+               <input type="submit" value="Submit" />
+            </div>
          </form>
       </section>
 
