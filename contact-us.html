@@ -24,7 +24,7 @@
             <div class="menu-button"></div>
          </label>
          <ul class="menu">
-            <li><a href="project.html"> Home</a></li>
+            <li><a href="index.html"> Home</a></li>
             <li><a href="project.html"> Projects</a></li>
             <li><a href="project.html"> Services</a></li>
          </ul>
@@ -38,8 +38,52 @@
          </button>
       </section>
 
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
       <section id="contact">
          <h1>Contact Us</h1>
+
+         <form class="contact-form" action="/contact.php" method="post">
+            <label for="name">Full name *</label>
+            <input
+               type="text"
+               id="full-name"
+               name="name"
+               placeholder="Enter your full name"
+               required
+            />
+
+            <label for="email">E-mail</label>
+            <input
+               type="text"
+               id="email"
+               name="email"
+               placeholder="Enter your e-mail address"
+            />
+
+            <label for="phone">Phone</label>
+            <input
+               type="tel"
+               id="phone"
+               name="phone"
+               placeholder="Enter your phone number"
+            />
+
+            <label for="message">Message</label>
+            <input
+               type="text"
+               id="message"
+               name="message"
+               placeholder="Write your message here ...."
+            />
+
+            <input type="submit" value="Submit" />
+         </form>
       </section>
 
       <!-- Empieza footer -->
