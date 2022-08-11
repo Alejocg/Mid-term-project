@@ -47,6 +47,11 @@
 }
 
 /* Common styles */
+
+body {
+   background-color: #f2f4fc;
+}
+
 .margin-large {
    margin: 0px 150px;
 }
@@ -516,7 +521,7 @@ h4 {
 
 #footer {
    width: 100%;
-   color: var(--dark-grey);
+   color: #68708d;
 }
 
 .footer-container {
@@ -551,7 +556,7 @@ h4 {
 
 .footer-content-row > a:hover {
    font-weight: bold;
-   color: var(--dark-blue);
+   color: #072ac8;
 }
 
 @media (min-width: 720px) {
@@ -583,4 +588,51 @@ h4 {
    .footer-container {
       max-width: 1770px;
    }
+}
+
+#contact {
+   margin-top: 90px;
+   padding: 130px 170px;
+}
+
+#contact form {
+   padding: 80px 0;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.form-label {
+   width: 100%;
+   font-size: 20px;
+}
+
+.form-btn {
+   margin-top: 40px;
+}
+
+.form-input {
+   width: 100%;
+}
+
+.form-input input {
+   background: rgba(107, 112, 141, 0.1);
+   width: 100%;
+   padding: 22px 20px;
+   box-sizing: border-box;
+}
+
+.form-input input:focus,
+.form-input input:active {
+   outline: 3px solid #072ac8;
+}
+
+.doble-input {
+   flex: 1;
+   width: 50%;
+   gap: 20px;
+   display: flex;
+   flex-direction: column;
 }
