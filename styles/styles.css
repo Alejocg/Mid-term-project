@@ -584,3 +584,13 @@ h4 {
       max-width: 1770px;
    }
 }
+
+#contact {
+   margin-top: 90px;
+   padding: 130px 170px;
+}
+
+#contact form{
+  padding: 80px 0;
+  width: 100%;
+}
