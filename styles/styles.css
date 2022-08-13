@@ -121,11 +121,9 @@ h5 {
   list-style-type: none;
   flex-basis: 40%;
   justify-content: space-around;
-}
-
-.menu ul {
   padding-left: 100px;
 }
+
 
 .menu a:link {
   text-decoration: none;
@@ -252,6 +250,7 @@ h5 {
   .menu-button-container {
     display: flex;
     padding-left: 25px;
+    margin-left: 0px;
   }
   .menu {
     position: absolute;
@@ -263,7 +262,8 @@ h5 {
     justify-content: center;
     align-items: center;
     margin-top: 80px;
-  }
+    padding-left: 0px;
+    }
 
   #menu-toggle ~ .menu li {
     height: 0;
@@ -289,6 +289,7 @@ h5 {
     color: white;
     background-color: rgba(255, 255, 255, 0.699);
     backdrop-filter: blur(10px);
+    
   }
 
   .menu > li:hover {
