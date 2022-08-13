@@ -789,6 +789,10 @@ h4 {
    text-align: center;
 }
 
+.review-col:nth-child(2){
+  flex: 2;
+}
+
 .review-col h2{
   font-size: 40px;
   color: var(--light-grey);
@@ -798,6 +802,7 @@ h4 {
   font-size: 24px;
   color: var(--yellow);
   max-width: 596px;
+  margin: auto;
 }
 
 .review-name-img {
