@@ -1,247 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Mid-term Project Alba,Alejo,Joan</title>
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-         rel="stylesheet"
-      />
-      <link rel="stylesheet" href="styles\styles.css" />
-   </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mid-term Project Alba,Alejo,Joan</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles\styles.css" />
+  </head>
 
-   <!-- Empieza sticky header -->
+  <!-- Empieza sticky header -->
 
-   <body>
-      <section class="top-nav">
-         <div>
-            <img src="img\logos\circle.svg" alt="circle-logo" />
-         </div>
-         <input id="menu-toggle" type="checkbox" />
-         <label class="menu-button-container" for="menu-toggle">
-            <div class="menu-button"></div>
-         </label>
-         <ul class="menu">
-            <li><a href="project.html"> Home</a></li>
-            <li><a href="project.html"> Projects</a></li>
-            <li><a href="project.html"> Services</a></li>
-         </ul>
-         <button
-            id="header-button"
-            class="btn"
-            onclick="location.href='contact-us.html'"
-            type="button"
-         >
-            Contact Us
-         </button>
-      </section>
+  <body>
+    <section class="top-nav">
+      <div>
+        <img src="img\logos\circle.svg" alt="circle-logo" />
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="project.html"> Home</a></li>
+        <li><a href="project.html"> Projects</a></li>
+        <li><a href="project.html"> Services</a></li>
+      </ul>
+      <button
+        id="header-button"
+        class="btn"
+        onclick="location.href='contact-us.html'"
+        type="button"
+      >
+        Contact Us
+      </button>
+    </section>
 
-      <!-- Empieza Seccion de logos -->
+    <section
+      id="hero-section"
+      class="margin-large flex-row-desktop flex-column-mobile flex-column-reverse-mobile"
+    >
+      <div class="hero-description half-width-desktop full-width-mobile">
+        <h1>Empower Your Business With Stunning Design!</h1>
+        <p class="body-intro-light">
+          Circle is a digital design and development studio. We design and
+          develop astonishing websites and mobile apps.
+        </p>
+        <div class="hero-actions">
+          <button class="btn">Get in touch</button>
+          <a class="headline" href="project.html">See our work</a>
+        </div>
+      </div>
+      <div class="hero-images half-width-desktop full-width-mobile">
+        <img class="person" src="img/hero-section/hero-image.png" />
+        <img class="credit-card" src="img/hero-section/card-1.png" />
+        <img class="emoji" src="img/hero-section/card-2.png" />
+      </div>
+    </section>
 
-      <section id="logos">
-         <div>
-            <img src="img\logos\airbnb-logo.svg" alt="airbnb-logo" />
-         </div>
+    <!-- Empieza Seccion de logos -->
 
-         <div>
-            <img src="img\logos\google-logo.svg" alt="google-logo" />
-         </div>
+    <section id="logos">
+      <div>
+        <img src="img\logos\airbnb-logo.svg" alt="airbnb-logo" />
+      </div>
 
-         <div>
-            <img src="img\logos\microsoft-logo.svg" alt="microsoft-logo" />
-         </div>
+      <div>
+        <img src="img\logos\google-logo.svg" alt="google-logo" />
+      </div>
 
-         <div>
-            <img src="img\logos\fedex-logo.svg" alt="fedex-logo" />
-         </div>
+      <div>
+        <img src="img\logos\microsoft-logo.svg" alt="microsoft-logo" />
+      </div>
 
-         <div>
-            <img src="img\logos\amazon-logo.svg" alt="amazon-logo" />
-         </div>
-      </section>
+      <div>
+        <img src="img\logos\fedex-logo.svg" alt="fedex-logo" />
+      </div>
 
-      <!-- Empieza Recent Projects -->
+      <div>
+        <img src="img\logos\amazon-logo.svg" alt="amazon-logo" />
+      </div>
+    </section>
 
-      <section class="recentProjects">
-         <h3>Recent Projects</h3>
-      </section>
+    <!-- Empieza Recent Projects -->
 
-      <section class="projects">
-         <div class="container">
-            <img
-               class="projects-img"
-               src="img\projects-section\1.jpg"
-               alt="simplify"
-            />
-            <div class="innerproject">
-               <h5>Simplify</h5>
-               <p class="featuretext">UI Design & App Development</p>
-               <a href="project.html"> Learn more</a>
-            </div>
-         </div>
+    <section class="recentProjects">
+      <h3>Recent Projects</h3>
+    </section>
 
-         <div class="container">
-            <img
-               class="projects-img"
-               src="img\projects-section\2.jpg"
-               alt="Dashcoin-icon"
-            />
-            <div class="innerproject">
-               <h5>Dashcoin</h5>
-               <p class="featuretext">Web Development</p>
-               <a href="project.html"> Learn more</a>
-            </div>
-         </div>
+    <section class="projects">
+      <div class="container">
+        <img
+          class="projects-img"
+          src="img\projects-section\1.jpg"
+          alt="simplify"
+        />
+        <div class="innerproject">
+          <h5>Simplify</h5>
+          <p class="featuretext">UI Design & App Development</p>
+          <a href="project.html"> Learn more</a>
+        </div>
+      </div>
 
-         <div class="container">
-            <img
-               class="projects-img"
-               src="img\projects-section\3.jpg"
-               alt="Vectorify-icon"
-            />
-            <div class="innerproject">
-               <h5>Vectorify</h5>
-               <p class="featuretext">User Experience Design</p>
-               <a href="project.html"> Learn more</a>
-            </div>
-         </div>
-      </section>
+      <div class="container">
+        <img
+          class="projects-img"
+          src="img\projects-section\2.jpg"
+          alt="Dashcoin-icon"
+        />
+        <div class="innerproject">
+          <h5>Dashcoin</h5>
+          <p class="featuretext">Web Development</p>
+          <a href="project.html"> Learn more</a>
+        </div>
+      </div>
 
-      <!-- Empieza other Projects -->
+      <div class="container">
+        <img
+          class="projects-img"
+          src="img\projects-section\3.jpg"
+          alt="Vectorify-icon"
+        />
+        <div class="innerproject">
+          <h5>Vectorify</h5>
+          <p class="featuretext">User Experience Design</p>
+          <a href="project.html"> Learn more</a>
+        </div>
+      </div>
+    </section>
 
-      <section class="recentProjects">
-         <h3>Other Projects</h3>
-      </section>
+    <!-- Empieza other Projects -->
 
-      <section class="projects">
-         <div class="container">
-            <img
-               class="projects-img"
-               src="img\projects-section\4.jpg"
-               alt="Orbit"
-            />
-            <div class="innerproject">
-               <h5>Orbit</h5>
-               <p class="featuretext">UI Design</p>
-               <a href="project.html"> Learn more</a>
-            </div>
-         </div>
+    <section class="recentProjects">
+      <h3>Other Projects</h3>
+    </section>
 
-         <div class="container">
-            <img
-               class="projects-img"
-               src="img\projects-section\5.jpg"
-               alt="Purify"
-            />
-            <div class="innerproject">
-               <h5>Purify</h5>
-               <p class="featuretext">UI/UX Design</p>
-               <a href="project.html"> Learn more</a>
-            </div>
-         </div>
+    <section class="projects">
+      <div class="container">
+        <img
+          class="projects-img"
+          src="img\projects-section\4.jpg"
+          alt="Orbit"
+        />
+        <div class="innerproject">
+          <h5>Orbit</h5>
+          <p class="featuretext">UI Design</p>
+          <a href="project.html"> Learn more</a>
+        </div>
+      </div>
 
-         <div class="container">
-            <img
-               class="projects-img"
-               src="img\projects-section\6.jpg"
-               alt="CryptoPie"
-            />
-            <div class="innerproject">
-               <h5>CryptoPie</h5>
-               <p class="featuretext">App Development</p>
-               <a href="project.html"> Learn more</a>
-            </div>
-         </div>
-      </section>
+      <div class="container">
+        <img
+          class="projects-img"
+          src="img\projects-section\5.jpg"
+          alt="Purify"
+        />
+        <div class="innerproject">
+          <h5>Purify</h5>
+          <p class="featuretext">UI/UX Design</p>
+          <a href="project.html"> Learn more</a>
+        </div>
+      </div>
 
-      <!-- Empieza Our Services -->
+      <div class="container">
+        <img
+          class="projects-img"
+          src="img\projects-section\6.jpg"
+          alt="CryptoPie"
+        />
+        <div class="innerproject">
+          <h5>CryptoPie</h5>
+          <p class="featuretext">App Development</p>
+          <a href="project.html"> Learn more</a>
+        </div>
+      </div>
+    </section>
 
-      <section class="our-Services">
-         <h3>Our Services</h3>
-      </section>
+    <!-- Empieza Our Services -->
 
-      <section class="projects">
-         <div class="container">
-            <div class="logo-shadow">
-               <img
-                  class="services-img"
-                  src="img\services-section\icons\1.svg"
-                  alt="User Interface Design"
-               />
-            </div>
-            <div class="innerproject">
-               <h5>User Expierence Design</h5>
-               <p class="featuretext">
-                  Circle provides you with a stunning user interface design that
-                  is accessible to everyone.
-               </p>
+    <section class="our-Services">
+      <h3>Our Services</h3>
+    </section>
 
-               <a href="project.html"> Learn more</a>
-            </div>
-         </div>
+    <section class="projects">
+      <div class="container">
+        <div class="logo-shadow">
+          <img
+            class="services-img"
+            src="img\services-section\icons\1.svg"
+            alt="User Interface Design"
+          />
+        </div>
+        <div class="innerproject">
+          <h5>User Expierence Design</h5>
+          <p class="featuretext">
+            Circle provides you with a stunning user interface design that is
+            accessible to everyone.
+          </p>
 
-         <div class="container">
-            <div class="logo-shadow">
-               <img
-                  class="services-img"
-                  src="img\services-section\icons\2.svg"
-                  alt="high-quality-icon"
-               />
-            </div>
-            <div class="innerproject">
-               <h5>User Expierence Design</h5>
-               <p class="featuretext">
-                  Circle always focuses on delivering the best user experience
-                  to your customers
-               </p>
-               <a href="project.html"> Learn more</a>
-            </div>
-         </div>
+          <a href="project.html"> Learn more</a>
+        </div>
+      </div>
 
-         <div class="container">
-            <div class="logo-shadow">
-               <img
-                  class="services-img"
-                  src="img\services-section\icons\3.svg"
-                  alt="CryptoPie"
-               />
-            </div>
-            <div class="innerproject">
-               <h5>Aplication Development</h5>
-               <p class="featuretext">
-                  We develop high-quality mobile and web applications using the
-                  latest technology stack
-               </p>
-               <a href="project.html"> Learn more</a>
-            </div>
-         </div>
-      </section>
+      <div class="container">
+        <div class="logo-shadow">
+          <img
+            class="services-img"
+            src="img\services-section\icons\2.svg"
+            alt="high-quality-icon"
+          />
+        </div>
+        <div class="innerproject">
+          <h5>User Expierence Design</h5>
+          <p class="featuretext">
+            Circle always focuses on delivering the best user experience to your
+            customers
+          </p>
+          <a href="project.html"> Learn more</a>
+        </div>
+      </div>
 
-      <!-- Empieza footer -->
+      <div class="container">
+        <div class="logo-shadow">
+          <img
+            class="services-img"
+            src="img\services-section\icons\3.svg"
+            alt="CryptoPie"
+          />
+        </div>
+        <div class="innerproject">
+          <h5>Aplication Development</h5>
+          <p class="featuretext">
+            We develop high-quality mobile and web applications using the latest
+            technology stack
+          </p>
+          <a href="project.html"> Learn more</a>
+        </div>
+      </div>
+    </section>
 
-      <footer id="footer">
-         <div class="footer-container">
-            <div class="footer-content">
-               <img src="img\logos\circle.svg" alt="circle-logo" />
-               <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
-            </div>
+    <section id="newsletter" class="margin-medium">
+      <div
+        class="newsletter-wrapper half-width-desktop full-width-mobile margin-mobile"
+      >
+        <h3>Do you have any questions?</h3>
+        <p class="body-intro-light">Let us help you!</p>
+        <div class="newsletter-subscribe flex-column-mobile">
+          <div
+            class="newsletter-subscribe-input full-width-mobile"
+          >
+            <img src="img/newsletter/icon/mail.svg" />
+            <input type="email" placeholder="Enter your email" />
+          </div>
+          <button class="btn full-width-mobile  margin-desktop">Subscribe</button>
+        </div>
+      </div>
+    </section>
 
-            <div class="footer-content">
-               <div class="footer-content-row">
-                  <a href="#">Team</a>
-                  <a href="project.html">Services</a>
-                  <a href="#">About Us</a>
-               </div>
+    <!-- Empieza footer -->
 
-               <div class="footer-content-row">
-                  <a href="#">Press</a>
-                  <a href="project.html">Projects</a>
-                  <a href="#">Privacy Policy</a>
-               </div>
-            </div>
-         </div>
-      </footer>
-   </body>
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <img src="img\logos\circle.svg" alt="circle-logo" />
+          <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+        </div>
+
+        <div class="footer-content">
+          <div class="footer-content-row">
+            <a href="#">Team</a>
+            <a href="project.html">Services</a>
+            <a href="#">About Us</a>
+          </div>
+
+          <div class="footer-content-row">
+            <a href="#">Press</a>
+            <a href="project.html">Projects</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
