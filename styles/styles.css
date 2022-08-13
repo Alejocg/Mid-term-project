@@ -780,7 +780,8 @@ h4 {
    width: 100%;
 }
 
-.form-input input {
+.form-input input,
+.form-input textarea {
    background: rgba(107, 112, 141, 0.1);
    width: 100%;
    padding: 22px 20px;
@@ -788,7 +789,9 @@ h4 {
 }
 
 .form-input input:focus,
-.form-input input:active {
+.form-input input:active,
+.form-input textarea:focus,
+.form-input textarea:active {
    outline: 3px solid #072ac8;
 }
 
