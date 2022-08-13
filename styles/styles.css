@@ -51,13 +51,11 @@ a {
 }
 
 /* Common styles */
-@media (max-width: 900px) {
-   .margin-large {
-      margin: 0px 50px;
-   }
-   .margin-medium {
-      margin: 0px 20px;
-   }
+
+body {
+   background-color: #f2f4fc;
+}
+
 }
 @media (min-width: 900px) {
    .margin-large {
@@ -630,7 +628,7 @@ h4 {
 
 #footer {
    width: 100%;
-   color: var(--dark-grey);
+   color: #68708d;
 }
 
 .footer-container {
@@ -666,7 +664,7 @@ h4 {
 
 .footer-content-row > a:hover {
    font-weight: bold;
-   color: var(--dark-blue);
+   color: #072ac8;
 }
 
 @media (min-width: 720px) {
@@ -754,6 +752,7 @@ h4 {
    margin: 0 20px;
 }
 
+
 #contact {
    margin-top: 115px;
    padding: 30px;
@@ -819,3 +818,4 @@ h4 {
     flex-direction: column;
  }
 }
+
