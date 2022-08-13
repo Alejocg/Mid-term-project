@@ -404,51 +404,55 @@ h4 {
   margin: 15px;
 }
 
-/* Seccion recentProjects */
-
+/* Recent Projects */
 .projects {
+  width: 100%;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   align-content: center;
+
   margin-bottom: 40px;
-  width: 100%;
 }
 
 .projects div {
+  width: 340px;
+  height: 380px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 340px;
   align-items: center;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   align-items: flex-start;
-  height: 380px;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.container {
+.projects .container {
   display: flex;
+
   margin: 25px;
 }
 
-.innerproject {
+.inner-project {
   display: flex;
   align-items: flex-start;
   padding-right: 0px;
 }
 
-.innerproject h5 {
+.inner-project h5 {
   padding-left: 25px;
   padding-top: 10px;
 }
 
-.innerproject p {
+.inner-project p {
   padding-left: 25px;
 }
 
-.recentProjects h3 {
+.recent-projects h3 {
   display: flex;
   flex-direction: row;
   margin: 50px;
@@ -482,7 +486,7 @@ h4 {
 
 /* Seccion ourServices */
 
-.our-Services h3 {
+.our-services h3 {
   display: flex;
   flex-direction: row;
   text-align: center;
