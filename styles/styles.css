@@ -619,7 +619,6 @@ h4 {
 /* Footer */
 #footer {
    width: 100%;
-
    color: var(--dark-grey);
 }
 
@@ -630,6 +629,7 @@ h4 {
    flex-direction: column;
    text-align: center;
    gap: 20px;
+   box-sizing: content-box;
 }
 
 .footer-content {
