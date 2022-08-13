@@ -780,29 +780,39 @@ h4 {
    align-items: center;
 }
 
+.review-col {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
 .review-name-img {
-  object-fit: contain;
+   object-fit: contain;
 }
 
 .review-name-img img {
-  object-fit: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+   object-fit: cover;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
 }
 
-.review-name-text{
-  margin-left: 10px;
+.review-name-text {
+   margin-left: 10px;
 }
 
-.review-name-text h3{
-  font-size: 17px;
-  color: var(--blue2);
-  font-weight: 400;
-  line-height: 1em;
+.review-name-text h3 {
+   font-size: 17px;
+   color: var(--blue2);
+   font-weight: 400;
+   line-height: 1em;
 }
 
-.review-name-text p{
-  color: var(--white);
-  font-size: 13px;
+.review-name-text p {
+   color: var(--white);
+   font-size: 13px;
+}
+
+.emoji {
+   width: 150px;
 }
