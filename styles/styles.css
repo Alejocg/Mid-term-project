@@ -772,18 +772,32 @@ h4 {
    background-color: var(--black);
    display: flex;
    flex-direction: row;
+   height: 622px;
 }
 
 #review-name {
    display: flex;
    flex-direction: row;
    align-items: center;
+   justify-content: center;
 }
 
 .review-col {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   text-align: center;
+}
+
+.review-col h2{
+  font-size: 40px;
+  color: var(--light-grey);
+}
+
+.review-col q{
+  font-size: 24px;
+  color: var(--yellow);
+  max-width: 596px;
 }
 
 .review-name-img {
@@ -799,6 +813,7 @@ h4 {
 
 .review-name-text {
    margin-left: 10px;
+   text-align: left;
 }
 
 .review-name-text h3 {
