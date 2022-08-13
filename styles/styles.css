@@ -787,22 +787,24 @@ h4 {
    flex-direction: column;
    justify-content: space-between;
    text-align: center;
+   padding: 50px;
 }
 
-.review-col:nth-child(2){
-  flex: 2;
+.review-col:nth-child(2) {
+   flex: 2;
+   padding: 120px 0;
 }
 
-.review-col h2{
-  font-size: 40px;
-  color: var(--light-grey);
+.review-col h2 {
+   font-size: 40px;
+   color: var(--light-grey);
 }
 
-.review-col q{
-  font-size: 24px;
-  color: var(--yellow);
-  max-width: 596px;
-  margin: auto;
+.review-col q {
+   font-size: 24px;
+   color: var(--yellow);
+   max-width: 596px;
+   margin: auto;
 }
 
 .review-name-img {
