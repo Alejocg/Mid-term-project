@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Mid-term Project Alba,Alejo,Joan</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <script src="scripts/scripts.js"></script>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="styles\styles.css" />
+   </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Alba,Alejo,Joan</title>
 
-    <link rel="stylesheet" href="styles\style.css">
-</head>
 
-<h1>Project page</h1>
+
+  <!-- Empieza sticky header -->
+
+  <body>
+    <section class="top-nav">
+      <div>
+        <img src="img\logos\circle.svg" alt="circle-logo" />
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="project.html"> Projects</a></li>
+        <li><a href="project.html"> Services</a></li>
+      </ul>
+      <button
+        id="header-button"
+        class="btn"
+        onclick="location.href='contact-us.html'"
+        type="button"
+      >
+        Contact Us
+      </button>
+    </section>
+
+    <h1>Project page</h1>
+
+<!-- Empieza other Projects -->
+
+<section class="recentProjects">
+    <h3>Other Projects</h3>
+  </section>
+
+  <section class="projects">
+    <div class="container">
+      <img
+        class="projects-img"
+        src="img\projects-section\4.jpg"
+        alt="Orbit"
+      />
+      <div class="innerproject">
+        <h5>Orbit</h5>
+        <p class="featuretext">UI Design</p>
+        <a href="project.html"> Learn more</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <img
+        class="projects-img"
+        src="img\projects-section\5.jpg"
+        alt="Purify"
+      />
+      <div class="innerproject">
+        <h5>Purify</h5>
+        <p class="featuretext">UI/UX Design</p>
+        <a href="project.html"> Learn more</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <img
+        class="projects-img"
+        src="img\projects-section\6.jpg"
+        alt="CryptoPie"
+      />
+      <div class="innerproject">
+        <h5>CryptoPie</h5>
+        <p class="featuretext">App Development</p>
+        <a href="project.html"> Learn more</a>
+      </div>
+    </div>
+  </section>
