@@ -124,7 +124,6 @@ h5 {
   padding-left: 100px;
 }
 
-
 .menu a:link {
   text-decoration: none;
 }
@@ -263,7 +262,7 @@ h5 {
     align-items: center;
     margin-top: 80px;
     padding-left: 0px;
-    }
+  }
 
   #menu-toggle ~ .menu li {
     height: 0;
@@ -289,7 +288,6 @@ h5 {
     color: white;
     background-color: rgba(255, 255, 255, 0.699);
     backdrop-filter: blur(10px);
-    
   }
 
   .menu > li:hover {
