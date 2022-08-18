@@ -11,7 +11,7 @@ function getHostname() {
     if (window.location.hostname === '') {
         return window.location.href.replace(/\/(project\.html|index\.html).*/, "");
     }
-    return window.location.hostname
+    return `https://${window.location.hostname}`
 }
 
 function getProjectIDFromURL() {
