@@ -10,6 +10,43 @@
          rel="stylesheet"
       />
       <link rel="stylesheet" href="styles\styles.css" />
+
+      <script>
+         function validateForm() {
+            let fullName = document.forms["contact-form"]["fname"].value;
+            let mail = document.forms["contact-form"]["email"].value;
+            let phone = document.forms["contact-form"]["phone"].value;
+            let message = document.forms["contact-form"]["message"].value;
+
+            if (fullName === "Ironhack" || fullName === "ironhack") {
+               alert("You can not be Ironhack, because I am Ironhack");
+               return false;
+            } else if (fullName == "" || fullName == null) {
+               alert("Name must be filled out");
+               return false;
+            } else if (mail == "") {
+               alert("Please provide a valid e-mail to send spam");
+               return false;
+            } else if (isNaN(phone)) {
+               alert("Give us your phone!");
+               return false;
+            } else if (phone > 9) {
+               alert(
+                  "Are you trolling? In our country number phones has at least 9 numbers ..."
+               );
+               return false;
+            } else if (message == null || message == "") {
+               alert(
+                  "C'mon, write something. We won't even care about your opinion."
+               );
+               return false;
+            } else {
+               return true;
+            }
+         }
+
+         /*/Validate the form using JavaScript (in addition to the required and type of the input). Show an alert if the name is equal to ironhack: You can not be Ironhack, because I am Ironhack /*/
+      </script>
    </head>
 
    <body>
@@ -41,7 +78,13 @@
       <section id="contact">
          <h1>Contact Us</h1>
 
-         <form class="contact-form" action="/contact.php" method="post">
+         <form
+            name="contact-form"
+            class="contact-form"
+            action="/contactform.php"
+            onsubmit="return validateForm()"
+            method="post"
+         >
             <div class="form-label">
                <label for="name">Full name *</label>
             </div>
@@ -50,7 +93,7 @@
                <input
                   type="text"
                   id="full-name"
-                  name="name"
+                  name="fname"
                   placeholder="Enter your full name"
                   required
                />
@@ -87,7 +130,11 @@
                <label for="message">Message</label>
             </div>
             <div class="form-input">
-                <textarea rows="10" name="message" placeholder="Write your message here ...."></textarea>
+               <textarea
+                  rows="10"
+                  name="message"
+                  placeholder="Write your message here ...."
+               ></textarea>
             </div>
 
             <input class="btn-large form-btn" type="submit" value="Submit" />
