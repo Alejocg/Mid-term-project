@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Mid-term Project Alba,Alejo,Joan</title>
       <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <script src="scripts/scripts.js"></script>
       <link
          href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
          rel="stylesheet"
@@ -22,9 +23,9 @@
             <div class="menu-button"></div>
          </label>
          <ul class="menu">
-            <li><a href="project.html" class="headline-light"> Home</a></li>
+            <li><a href="index.html" class="headline-light"> Home</a></li>
             <li><a href="project.html" class="headline-light"> Projects</a></li>
-            <li><a href="project.html" class="headline-light"> Services</a></li>
+            <li><a href="contact-us.html" class="headline-light"> Services</a></li>
          </ul>
          <button
             id="header-button"
@@ -60,6 +61,8 @@
          </div>
       </section>
 
+         <!-- Empieza Seccion de logos -->
+
       <section id="logos" class="margin-large space-evenly-mobile">
          <div>
             <img src="img\logos\airbnb-logo.svg" alt="airbnb-logo" />
@@ -82,52 +85,55 @@
          </div>
       </section>
 
-      <section class="recent-projects margin-large">
-         <h3>Recent Projects</h3>
+    <!-- Empieza Recent Projects -->
 
-         <div class="projects">
-            <div class="container">
-               <img
-                  class="projects-img"
-                  src="img\projects-section\1.jpg"
-                  alt="simplify"
-               />
-               <div class="inner-project">
-                  <h4 class="body-intro">Simplify</h4>
-                  <p class="feature-text headline">
-                     UI Design & App Development
-                  </p>
-                  <a href="project.html"> Learn more</a>
-               </div>
-            </div>
+    <section class="recentProjects">
+      <h3>Recent Projects</h3>
+    </section>
 
-            <div class="container">
-               <img
-                  class="projects-img"
-                  src="img\projects-section\2.jpg"
-                  alt="Dashcoin-icon"
-               />
-               <div class="inner-project">
-                  <h4 class="body-intro">Dashcoin</h4>
-                  <p class="feature-text headline">Web Development</p>
-                  <a href="project.html"> Learn more</a>
-               </div>
-            </div>
+    <section class="projects">
+      <div class="container">
+        <img
+          class="projects-img"
+          id="API1img"
+          src="img\projects-section\1.jpg"
+          alt="simplify"
+        />
+        <div class="innerproject">
+          <h5 id="API1name">Simplify</h5>
+          <p id="API1description" class="featuretext">UI Design & App Development</p>
+          <a href="project.html"> Learn more</a>
+        </div>
+      </div>
 
-            <div class="container">
-               <img
-                  class="projects-img"
-                  src="img\projects-section\3.jpg"
-                  alt="Vectorify-icon"
-               />
-               <div class="inner-project">
-                  <h4 class="body-intro">Vectorify</h4>
-                  <p class="feature-text headline">User Experience Design</p>
-                  <a href="project.html"> Learn more</a>
-               </div>
-            </div>
-         </div>
-      </section>
+      <div class="container">
+        <img
+          class="projects-img"
+          id="API2img"
+          src="img\projects-section\2.jpg"
+          alt="Dashcoin-icon"
+        />
+        <div class="innerproject">
+          <h5 id="API2name">Dashcoin</h5>
+          <p id="API2description" class="featuretext">Web Development</p>
+          <a href="project.html"> Learn more</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <img
+          class="projects-img"
+          id="API3img"
+          src="img\projects-section\3.jpg"
+          alt="Vectorify-icon"
+        />
+        <div class="innerproject">
+          <h5 id="API3name">Vectorify</h5>
+          <p id="API3description" class="featuretext">User Experience Design</p>
+          <a href="project.html"> Learn more</a>
+        </div>
+      </div>
+    </section>
 
       <!-- Empieza Reviews -->
 
@@ -178,69 +184,66 @@
          </div>
       </section>
 
-      <section class="our-services margin-large">
+        <!-- Empieza Our Services -->
+      
+        <section class="our-Services">
          <h3>Our Services</h3>
+       </section>
+      
 
-         <div class="projects">
-            <div class="container">
-               <div class="logo-shadow">
-                  <div class="services-img">
-                     <img
-                        src="img\services-section\icons\1.svg"
-                        alt="User Interface Design"
-                     />
-                  </div>
-               </div>
-               <div class="inner-project">
-                  <h4 class="body-intro">User Experience Design</h4>
-                  <p class="feature-text headline">
-                     Circle provides you with a stunning user interface design
-                     that is accessible to everyone.
-                  </p>
-
-                  <a href="project.html"> Learn more</a>
-               </div>
-            </div>
-
-            <div class="container">
-               <div class="logo-shadow">
-                  <div class="services-img">
-                     <img
-                        src="img/services-section/icons/2.svg"
-                        alt="high-quality-icon"
-                     />
-                  </div>
-               </div>
-               <div class="inner-project">
-                  <h4 class="body-intro">User Experience Design</h4>
-                  <p class="feature-text headline">
-                     Circle always focuses on delivering the best user
-                     experience to your customers
-                  </p>
-                  <a href="project.html"> Learn more</a>
-               </div>
-            </div>
-
-            <div class="container">
-               <div class="logo-shadow">
-                  <div class="services-img">
-                     <img
-                        src="img\services-section\icons\3.svg"
-                        alt="CryptoPie"
-                     />
-                  </div>
-               </div>
-               <div class="inner-project">
-                  <h4 class="body-intro">Aplication Development</h4>
-                  <p class="feature-text headline">
-                     We develop high-quality mobile and web applications using
-                     the latest technology stack
-                  </p>
-                  <a href="project.html"> Learn more</a>
-               </div>
-            </div>
-         </div>
+      <section class="projects">
+        <div class="innerproject-services">
+          <main class="services-img">
+            <img
+              src="img\services-section\icons\1.svg"
+              alt="User Interface Design"
+            />
+          </main>
+  
+          <h5>User Interface Design</h5>
+          <p class="featuretext">
+            Circle provides you with a stunning user interface design that is
+            accessible to everyone.
+          </p>
+  
+          <a href="project.html"> Learn more</a>
+        </div>
+  
+        <div class="innerproject-services">
+          <main class="services-img">
+            <img
+              src="img\services-section\icons\2.svg"
+              alt="User Interface Design"
+            />
+          </main>
+  
+          <h5>User Expierence Design</h5>
+          <p class="featuretext">
+            Circle always focuses on delivering the best user experience to your
+            customers.
+          </p>
+  
+          <a href="project.html"> Learn more</a>
+        </div>
+  
+        <div class="innerproject-services">
+          <main class="services-img">
+            <img
+              src="img\services-section\icons\3.svg"
+              alt="User Interface Design"
+            />
+          </main>
+  
+          <h5>Application Development</h5>
+          <p class="featuretext">
+            We develop high-quality mobile and web applications using the latest
+            technology stack.
+          </p>
+  
+          <a href="project.html"> Learn more</a>
+        </div>
       </section>
+
 
       <section id="newsletter" class="margin-medium">
          <div
