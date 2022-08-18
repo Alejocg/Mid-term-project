@@ -43,13 +43,26 @@
       </button>
     </section>
 
-    <section id="contact">
-      <h1>Contact Us</h1>
+         <form
+            name="contact-form"
+            class="contact-form"
+            action="/contactform.php"
+            onsubmit="return validateForm()"
+            method="post"
+         >
+            <div class="form-label">
+               <label for="name">Full name *</label>
+            </div>
 
-      <form class="contact-form" action="/contact.php" method="post">
-        <div class="form-label">
-          <label for="name">Full name *</label>
-        </div>
+            <div class="form-input">
+               <input
+                  type="text"
+                  id="full-name"
+                  name="fname"
+                  placeholder="Enter your full name"
+                  required
+               />
+            </div>
 
         <div class="form-input">
           <input
@@ -61,32 +74,16 @@
           />
         </div>
 
-        <div class="doble-input">
-          <div class="form-label">
-            <label for="email">E-mail</label>
-          </div>
-          <div class="form-input">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your e-mail address"
-            />
-          </div>
-        </div>
-        <div class="doble-input">
-          <div class="form-label">
-            <label for="phone">Phone</label>
-          </div>
-          <div class="form-input">
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Enter your phone number"
-            />
-          </div>
-        </div>
+            <div class="form-label">
+               <label for="message">Message</label>
+            </div>
+            <div class="form-input">
+               <textarea
+                  rows="10"
+                  name="message"
+                  placeholder="Write your message here ...."
+               ></textarea>
+            </div>
 
         <div class="form-label">
           <label for="message">Message</label>
