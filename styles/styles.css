@@ -1008,3 +1008,11 @@ h4 {
 .project-description p {
     margin-bottom: 30px;
 }
+
+#content-not-found{
+    margin: 200px 0 200px;
+    text-align: center;
+}
+#content-not-found h1 {
+    margin-bottom: 40px;
+}
