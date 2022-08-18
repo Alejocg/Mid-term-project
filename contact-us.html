@@ -1,133 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Contact - Mid-term project</title>
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-         rel="stylesheet"
-      />
-      <link rel="stylesheet" href="styles\styles.css" />
-      <script src="scripts/scripts.js"></script>
-   </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Mid-term project</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles\styles.css" />
+    <script src="scripts/form.js"></script>
+  </head>
 
-   <body>
-      <!-- Empieza navbar -->
+  <body>
+    <!-- Empieza navbar -->
 
-      <section class="top-nav">
-         <div>
-            <img src="img\logos\circle.svg" alt="circle-logo" />
-         </div>
-         <input id="menu-toggle" type="checkbox" />
-         <label class="menu-button-container" for="menu-toggle">
-            <div class="menu-button"></div>
-         </label>
-         <ul class="menu">
-            <li><a href="index.html"> Home</a></li>
-            <li><a href="project.html"> Projects</a></li>
-            <li><a href="contact-us.html"> Services</a></li>
-         </ul>
-         <button
-            id="header-button"
-            class="btn"
-            onclick="location.href='contact-us.html'"
-            type="button"
-         >
-            Contact Us
-         </button>
-      </section>
+    <section class="top-nav">
+      <div>
+        <img src="img\logos\circle.svg" alt="circle-logo" />
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="index.html" class="headline-light"> Home</a></li>
+        <li>
+          <a href="index.html#projects" class="headline-light"> Projects</a>
+        </li>
+        <li>
+          <a href="index.html#services" class="headline-light"> Services</a>
+        </li>
+      </ul>
+      <button
+        id="header-button"
+        class="btn"
+        onclick="location.href='contact-us.html'"
+        type="button"
+      >
+        Contact Us
+      </button>
+    </section>
 
-      <section id="contact">
-         <h1>Contact Us</h1>
+    <section id="contact">
+      <h1>Contact Us</h1>
 
-         <form
-            name="contact-form"
-            class="contact-form"
-            action="/contactform.php"
-            onsubmit="return validateForm()"
-            method="post"
-         >
-            <div class="form-label">
-               <label for="name">Full name *</label>
-            </div>
+      <form
+        name="contact-form"
+        class="contact-form"
+        action="/contactform.php"
+        onsubmit="return validateForm()"
+        method="post"
+      >
+        <div class="form-label">
+          <label for="name">Full name *</label>
+        </div>
 
-            <div class="form-input">
-               <input
-                  type="text"
-                  id="full-name"
-                  name="fname"
-                  placeholder="Enter your full name"
-                  required
-               />
-            </div>
+        <div class="form-input">
+          <input
+            type="text"
+            id="full-name"
+            name="fname"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
 
-            <div class="doble-input">
-               <div class="form-label">
-                  <label for="email">E-mail</label>
-               </div>
-               <div class="form-input">
-                  <input
-                     type="email"
-                     id="email"
-                     name="email"
-                     placeholder="Enter your e-mail address"
-                  />
-               </div>
-            </div>
-            <div class="doble-input">
-               <div class="form-label">
-                  <label for="phone">Phone</label>
-               </div>
-               <div class="form-input">
-                  <input
-                     type="tel"
-                     id="phone"
-                     name="phone"
-                     placeholder="Enter your phone number"
-                  />
-               </div>
-            </div>
+        <div class="doble-input">
+          <div class="form-label">
+            <label for="email">E-mail</label>
+          </div>
+          <div class="form-input">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your e-mail address"
+            />
+          </div>
+        </div>
+        <div class="doble-input">
+          <div class="form-label">
+            <label for="phone">Phone</label>
+          </div>
+          <div class="form-input">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+            />
+          </div>
+        </div>
 
-            <div class="form-label">
-               <label for="message">Message</label>
-            </div>
-            <div class="form-input">
-               <textarea
-                  rows="10"
-                  name="message"
-                  placeholder="Write your message here ...."
-               ></textarea>
-            </div>
+        <div class="form-label">
+          <label for="message">Message</label>
+        </div>
+        <div class="form-input">
+          <textarea
+            rows="10"
+            name="message"
+            placeholder="Write your message here ...."
+          ></textarea>
+        </div>
 
-            <input class="btn-large form-btn" type="submit" value="Submit" />
-         </form>
-      </section>
+        <input class="btn-large form-btn" type="submit" value="Submit" />
+      </form>
+    </section>
 
-      <!-- Empieza footer -->
+    <!-- Empieza footer -->
 
-      <footer id="footer">
-         <div class="footer-container">
-            <div class="footer-content">
-               <img src="img\logos\circle.svg" alt="circle-logo" />
-               <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
-            </div>
+    <footer id="footer">
+      <div class="footer-container box-sm">
+        <div class="footer-content">
+          <img src="img\logos\circle.svg" alt="circle-logo" />
+          <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+        </div>
 
-            <div class="footer-content">
-               <div class="footer-content-row">
-                  <a href="#">Team</a>
-                  <a href="project.html">Services</a>
-                  <a href="#">About Us</a>
-               </div>
+        <div class="footer-content">
+          <div class="footer-content-row">
+            <a href="#">Team</a>
+            <a href="index.html#services">Services</a>
+            <a href="#">About Us</a>
+          </div>
 
-               <div class="footer-content-row">
-                  <a href="#">Press</a>
-                  <a href="project.html">Projects</a>
-                  <a href="#">Privacy Policy</a>
-               </div>
-            </div>
-         </div>
-      </footer>
-   </body>
+          <div class="footer-content-row">
+            <a href="#">Press</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
