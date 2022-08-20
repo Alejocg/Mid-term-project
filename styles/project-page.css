@@ -1,0 +1,34 @@
+@import url("general.css");
+
+#project-article {
+  position: relative;
+}
+
+.project-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.project-subtitle span {
+  font-size: 20px;
+}
+.project-image {
+  max-height: 444px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50px;
+
+  overflow: hidden;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.project-image img {
+  width: 100%;
+}
+.project-description {
+  margin-top: 50px;
+}
