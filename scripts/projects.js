@@ -3,27 +3,28 @@ async function fetchData() {
         .then(response => response.json());
 }
 
+function hideSpinner() {
+    setTimeout(() => [...document.querySelectorAll(".spinner-component")].map(el => el.style.display = "none"), 400);
+    
+}
+
 function redirectNoContent() {
     window.location.replace(`${getHostname()}/404.html`);
 }
 function getHostname() {
-    // When running on local, hostname may be empty, use pathname instead
     if (window.location.hostname === '') {
-        return window.location.href.replace(/\/(project\.html|index\.html).*/, "");
+        return window.location.href.replace(/\/(project\.html|index\.html|404\.html).*/, "");
     }
     return `https://${window.location.hostname}`
 }
 
 function getProjectIDFromURL() {
-    // Check search URL part and extract Project ID
     searchURLMatch = window.location.search.match(/project_id=(\d+)/);
 
-    // If we couldn't obtain the ID, return null to show a 404 error
-    if (searchURLMatch === null || searchURLMatch.length < 2) {
+    if (!searchURLMatch || searchURLMatch.length < 2) {
         redirectNoContent();
     }
 
-    // Return matching group with search ID
     return searchURLMatch[1];
 }
 
@@ -38,51 +39,50 @@ function printMainProject(project) {
     document.querySelector('#project-article .project-description p').innerHTML = project.content;
 }
 function printOtherProjects(projects) {
-    // Shuffle projects randomly
     projects = projects.map(value => ({ value, sort: Math.random() }))
         .sort((a, b) => a.sort - b.sort)
         .map(({ value }) => value);
 
-    document.querySelectorAll('.projects.projects-wrapper .container').forEach((el, idx) => {
-        el.querySelector('img').src = projects[idx].image;
-        el.querySelector('h4').textContent = projects[idx].name;
-        el.querySelector('p').textContent = projects[idx].description;
-        el.querySelector('a').href = `${getHostname()}/project.html?project_id=${projects[idx].uuid}`
+    document.querySelectorAll('#projects .card-component').forEach((el, idx) => {
+        el.querySelector('.card-image img').src = projects[idx].image;
+        el.querySelector('.card-image img').alt = `${projects[idx].name} image`;
+        el.querySelector('.card-title').textContent = projects[idx].name;
+        el.querySelector('.card-description').textContent = projects[idx].description;
+        el.querySelector('.card-link').href = `${getHostname()}/project.html?project_id=${projects[idx].uuid}`
     })
+
 
 }
 
-async function showProjects() {
-    // Fetch projects json
+async function showProjectsPage() {
     projects = await fetchData();
 
-    // Obtain Project ID from search part from the URL
     mainProjectID = getProjectIDFromURL();
 
-    // Obtain desired Project
     mainProject = projects.filter(project => project.uuid == mainProjectID)?.[0];
     if (mainProject === undefined) {
         redirectNoContent();
     }
 
-    // Print projects
     printMainProject(mainProject);
     printOtherProjects(projects.filter(project => project.uuid != mainProjectID));
+
+    hideSpinner();
 }
 
-async function showProjectsIndex() {
-    // Fetch projects json
+async function showProjects() {
     projects = await fetchData();
 
-    // Print projects
     printOtherProjects(projects);
+
+    hideSpinner();
 }
 
 
 
 if (window.location.href.match(/project\.html/)) {
-    window.addEventListener('load', showProjects);
+    window.addEventListener('load', showProjectsPage);
 } else {
-    window.addEventListener('load', showProjectsIndex);
+    window.addEventListener('load', showProjects);
 }
 
