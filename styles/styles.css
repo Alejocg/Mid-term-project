@@ -60,13 +60,18 @@ h1,
 h2,
 h3,
 h4,
+h5,
 .body-intro,
-.body-intro-light,
 .headline,
 .headline-light .caption,
 .caption-light {
-   color: #514d67;
+   color: var(--black);
 }
+
+.body-intro-light {
+   color: var(--dark-grey);
+}
+
 .body-intro,
 .headline {
    font-weight: 500;
