@@ -60,13 +60,18 @@ h1,
 h2,
 h3,
 h4,
+h5,
 .body-intro,
-.body-intro-light,
 .headline,
 .headline-light .caption,
 .caption-light {
-   color: #514d67;
+   color: var(--black);
 }
+
+.body-intro-light {
+   color: var(--dark-grey);
+}
+
 .body-intro,
 .headline {
    font-weight: 500;
@@ -500,8 +505,7 @@ h4 {
 
 .projects .container {
    width: 340px;
-   height: 380px;
-
+   height: auto;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -517,16 +521,17 @@ h4 {
 }
 
 .inner-project {
+   width: 100%;
    display: flex;
    align-items: flex-start;
    flex-direction: column;
-
-   padding-right: 0px;
+   margin: 30px 0 20px;
 }
 
 .inner-project h4 {
    padding-left: 25px;
    padding-top: 10px;
+   font-weight: bold;
 }
 
 .inner-project p {
