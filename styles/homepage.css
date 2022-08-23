@@ -133,6 +133,15 @@
   }
 }
 
+@media (max-width: 720px) {
+    .review-content > h3 {
+        margin-bottom: 20px;
+    }
+    .review-name {
+        margin-top: 20px;
+    }
+}
+
 .emoji {
   width: 80px;
   margin: 10px 0;
