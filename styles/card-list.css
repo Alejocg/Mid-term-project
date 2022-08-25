@@ -23,6 +23,11 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.card-component:hover {
+    width: 34%;
+    transition: 0.5s;
+}
+
 .card-content {
   width: 100%;
   display: flex;
