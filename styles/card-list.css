@@ -23,11 +23,6 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.card-component:hover {
-    width: 34%;
-    transition: 0.5s;
-}
-
 .card-content {
   width: 100%;
   display: flex;
@@ -89,5 +84,11 @@
     width: 340px;
 
     margin: 0 20px 40px 20px;
+  }
+}
+@media (min-width: 920px) {
+  .card-component:hover {
+    width: 34%;
+    transition: 0.5s;
   }
 }
